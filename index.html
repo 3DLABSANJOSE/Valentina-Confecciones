@@ -58,7 +58,8 @@
     .jersey-stage {
       position: relative;
       width: 100%;
-      max-width: 660px;
+      max-width: 680px;
+      min-height: 460px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -68,16 +69,16 @@
     .jersey-bg-wrapper {
       position: relative;
       width: 100%;
+      min-height: 460px;
       display: flex;
       justify-content: center;
       align-items: center;
-      filter: drop-shadow(0 24px 40px rgba(0, 0, 0, 0.88));
     }
 
     .jersey-base-img {
       width: 100%;
       height: auto;
-      max-height: 92dvh;
+      max-height: 93dvh;
       object-fit: contain;
       display: block;
       user-select: none;
@@ -86,17 +87,17 @@
 
     .jersey-print-area {
       position: absolute;
-      top: 15%;
-      bottom: 6.5%;
-      width: 40%;
-      max-width: 255px;
-      min-width: 185px;
+      top: 15.5%;
+      bottom: 8.5%;
+      width: 42%;
+      max-width: 275px;
+      min-width: 195px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 6px;
-      z-index: 5;
+      gap: 8px;
+      z-index: 10;
     }
 
     .brand-header {
@@ -107,15 +108,14 @@
     }
 
     .brand-logo {
-      width: 112px;
-      max-width: 76%;
+      width: 122px;
+      max-width: 78%;
       height: auto;
       object-fit: contain;
-      filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.75));
     }
 
     .stitch-divider {
-      width: 72%;
+      width: 74%;
       border: none;
       border-top: 1.5px dashed rgba(255, 255, 255, 0.24);
       margin: 2px 0;
@@ -125,7 +125,7 @@
       width: 100%;
       display: flex;
       flex-direction: column;
-      gap: 6px;
+      gap: 9px;
     }
 
     /* Parche / Estampado textil semi-integrado sobre la tela */
@@ -133,9 +133,9 @@
       position: relative;
       display: flex;
       align-items: center;
-      gap: 9px;
+      gap: 10px;
       width: 100%;
-      padding: 6px 10px;
+      padding: 8px 12px;
       text-decoration: none;
       color: var(--text-main);
       opacity: 1;
@@ -147,9 +147,8 @@
           transparent 1px,
           transparent 4px
         ),
-        linear-gradient(155deg, rgba(22, 23, 29, 0.82), rgba(10, 11, 15, 0.90));
-      backdrop-filter: blur(2px);
-      border-radius: 11px;
+        linear-gradient(155deg, rgba(22, 23, 29, 0.86), rgba(10, 11, 15, 0.94));
+      border-radius: 12px;
       border: 1px solid rgba(255, 255, 255, 0.16);
       box-shadow:
         0 5px 12px rgba(0, 0, 0, 0.55),
@@ -167,7 +166,7 @@
       content: "";
       position: absolute;
       inset: 2.5px;
-      border-radius: 8px;
+      border-radius: 9px;
       border: 1px dashed rgba(255, 255, 255, 0.26);
       pointer-events: none;
       transition: border-color 0.2s ease;
@@ -199,7 +198,7 @@
           transparent 1px,
           transparent 4px
         ),
-        linear-gradient(155deg, rgba(30, 32, 40, 0.9), rgba(14, 15, 20, 0.96));
+        linear-gradient(155deg, rgba(30, 32, 40, 0.92), rgba(14, 15, 20, 0.96));
       box-shadow:
         0 8px 18px rgba(0, 0, 0, 0.72),
         0 0 14px var(--glow-color, rgba(233, 30, 99, 0.3));
@@ -219,10 +218,10 @@
     }
 
     .patch-icon {
-      width: 26px;
-      height: 26px;
-      min-width: 26px;
-      border-radius: 7px;
+      width: 30px;
+      height: 30px;
+      min-width: 30px;
+      border-radius: 8px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -234,18 +233,16 @@
     }
 
     .patch-icon svg {
-      width: 15px;
-      height: 15px;
+      width: 17px;
+      height: 17px;
       fill: #ffffff;
-      filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.35));
     }
 
     .patch-handle {
-      font-size: 0.68rem;
+      font-size: 0.74rem;
       font-weight: 600;
       letter-spacing: 0.015em;
       color: var(--text-muted);
-      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.85);
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -284,16 +281,16 @@
     }
 
     .woven-tag-link {
-      margin-top: 4px;
-      padding: 3px 9px;
-      background: rgba(12, 12, 16, 0.88);
+      margin-top: 6px;
+      padding: 4px 10px;
+      background: rgba(12, 12, 16, 0.9);
       border: 1px dashed rgba(255, 255, 255, 0.24);
       border-radius: 6px;
-      font-size: 0.54rem;
+      font-size: 0.58rem;
       font-weight: 600;
       letter-spacing: 0.07em;
       text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.68);
+      color: rgba(255, 255, 255, 0.72);
       text-align: center;
       text-decoration: none;
       display: inline-flex;
@@ -309,8 +306,8 @@
     }
 
     .woven-tag-link svg {
-      width: 10px;
-      height: 10px;
+      width: 11px;
+      height: 11px;
       fill: #00f2ea;
       flex-shrink: 0;
     }
@@ -324,48 +321,52 @@
     }
 
     @media (max-width: 540px) {
+      .jersey-stage,
+      .jersey-bg-wrapper {
+        min-height: 360px;
+      }
       .jersey-print-area {
-        top: 14.5%;
-        bottom: 6%;
-        width: 44%;
-        min-width: 162px;
-        gap: 4px;
+        top: 15%;
+        bottom: 8%;
+        width: 46%;
+        min-width: 172px;
+        gap: 6px;
       }
       .brand-logo {
-        width: 76px;
+        width: 84px;
       }
       .stitch-divider {
-        margin: 1px 0;
+        margin: 2px 0;
       }
       .patches-list {
-        gap: 4px;
+        gap: 6px;
       }
       .patch-btn {
-        padding: 4px 7px;
-        gap: 6px;
-        border-radius: 8px;
+        padding: 6px 9px;
+        gap: 8px;
+        border-radius: 10px;
       }
       .patch-btn::before {
         inset: 2px;
-        border-radius: 6px;
+        border-radius: 8px;
       }
       .patch-icon {
-        width: 20px;
-        height: 20px;
-        min-width: 20px;
-        border-radius: 5px;
+        width: 24px;
+        height: 24px;
+        min-width: 24px;
+        border-radius: 6px;
       }
       .patch-icon svg {
-        width: 12px;
-        height: 12px;
+        width: 14px;
+        height: 14px;
       }
       .patch-handle {
-        font-size: 0.55rem;
+        font-size: 0.62rem;
       }
       .woven-tag-link {
-        margin-top: 3px;
-        padding: 2px 7px;
-        font-size: 0.46rem;
+        margin-top: 4px;
+        padding: 3px 8px;
+        font-size: 0.5rem;
       }
     }
   </style>
